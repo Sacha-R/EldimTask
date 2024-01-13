@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
                 ('office', models.CharField(max_length=100)),
                 ('age', models.IntegerField()),
                 ('start_date', models.DateField()),
-                ('salary', models.DecimalField(decimal_places=2, max_digits=8)),
+                ('salary', models.DecimalField(decimal_places=2, max_digits=10)),
             ],
         ),
     ]

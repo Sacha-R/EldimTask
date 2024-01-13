@@ -6,4 +6,4 @@ class User(models.Model):
     office = models.CharField(max_length=100)
     age = models.IntegerField()
     start_date = models.DateField()
-    salary = models.DecimalField(max_digits=8, decimal_places=2)
+    salary = models.DecimalField(max_digits=10, decimal_places=2)
