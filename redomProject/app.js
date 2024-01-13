@@ -1,7 +1,22 @@
 // Define the column definitions for AG Grid
 var columnDefs = [
     {headerName: "ID", field: "id"},
-    {headerName: "Name", field: "name"},
+    {
+        headerName: "Name",
+        field: "name",
+        cellRenderer: function(params) {
+            return '<button class="btn-cell">' + params.value + '</button>';
+        },
+        onCellClicked: function(params) {
+            var currentSalary = parseFloat(params.data.salary);
+            if (currentSalary) {
+                var newSalary = currentSalary * 1.1;
+                params.node.setDataValue('salary', newSalary.toFixed(2));
+                params.api.flashCells({rowNodes: [params.node], columns: ['salary']});
+                // params.api.refreshCells({rowNodes: [params.node], columns: ['salary']});
+            }
+        }
+    },
     {headerName: "Position", field: "position"},
     {headerName: "Office", field: "office"},
     {headerName: "Age", field: "age"},

@@ -1,0 +1,29 @@
+
+.btn-cell {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.btn-cell:hover {
+    background-color: #45a049;
+}
+
+@keyframes shading {
+    0% { background-color: #ffffff; }
+    50% { background-color: #90ee90; }
+    100% { background-color: #ffffff; }
+}
+
+.shading-effect {
+    animation-name: shading;
+    animation-duration: 2s;
+}
