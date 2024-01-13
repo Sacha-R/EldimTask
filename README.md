@@ -7,6 +7,8 @@
 15min
 
 3 - Load a table, users using ‘loaddata’.
+15minute
+
 4 - Use RE:DOM and AG Grid to display it to the user.
 5 - AG Grid: Load a table with a default ordering by Age Desc (after loading to AG
 Grid). Create a menu on the right (below ‘Filters’) that will store filter set objects
