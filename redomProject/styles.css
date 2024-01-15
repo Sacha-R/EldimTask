@@ -27,3 +27,22 @@
     animation-name: shading;
     animation-duration: 2s;
 }
+
+.my-custom-tool-panel {
+    padding: 10px;
+}
+
+.my-custom-tool-panel input {
+    margin-bottom: 10px;
+}
+
+.my-custom-tool-panel .filter-set {
+    display: flex; 
+    align-items: center; 
+}
+
+.my-custom-tool-panel .filter-set::before {
+    content: '•';
+    margin-right: 5px;  
+    margin-bottom: 5px;  
+}

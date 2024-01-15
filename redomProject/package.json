@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "ag-grid-community": "^31.0.1",
+    "ag-grid-enterprise": "^31.0.1",
     "ag-grid-react": "^31.0.1",
     "redom": "^4.0.0"
   }
