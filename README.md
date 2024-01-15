@@ -13,6 +13,14 @@ Before you start, make sure you have the following installed:
 - Python 3
 - Django
 - Node.js and npm
+- lite-server
+
+If you don't have `lite-server` installed, you can install it globally with npm:
+
+```bash
+npm install -g lite-server
+```
+
 
 ### Installing
 
@@ -26,7 +34,6 @@ open 2 terminals
 
 ```bash
 cd EldimTask
-pip install -r requirements.txt
 python manage.py runserver
 ```
 
@@ -62,4 +69,4 @@ Duration: 20 minutes
 7. Make a refresh button inside AG Grid to re-load data from DB
 Duration: 15 minutes
 
-Enjoy exploring EldimTask!
+i hope you will enjoy exploring my work!
